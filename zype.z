@@ -1,0 +1,23 @@
+from zype as luaython
+from lua
+from python
+from program
+
+$if user type"Luaython" then {
+   show("Tell your code to execute")
+   call luaython
+   input(">>>")
+}
+
+$if user type"exit" then {
+   show("Please try exit()")
+}
+
+$if user type"exit()" then {
+   close.program()
+}
+
+$complate {
+   lua to python
+   call $execute
+}
